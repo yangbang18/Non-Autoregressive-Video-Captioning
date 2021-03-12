@@ -1,0 +1,1 @@
+from .na_generate import generate

@@ -1,0 +1,26 @@
+ARB:
+  encoder: Encoder_HighWay
+  decoder: BertDecoder
+  decoding_type: ARFormer
+  fusion: temporal_concat
+  visual_word_generation: False
+ARB2:
+  encoder: Encoder_HighWay
+  decoder: BertDecoderDisentangled
+  decoding_type: ARFormer
+  fusion: temporal_concat
+  visual_word_generation: True
+  demand: [VERB, NOUN]
+NAB:
+  encoder: Encoder_HighWay
+  decoder: BertDecoder
+  decoding_type: NARFormer
+  fusion: temporal_concat
+  visual_word_generation: False
+NACF:
+  encoder: Encoder_HighWay
+  decoder: BertDecoderDisentangled
+  decoding_type: NARFormer
+  fusion: temporal_concat
+  visual_word_generation: True
+  demand: [VERB, NOUN]
