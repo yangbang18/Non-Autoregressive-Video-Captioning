@@ -75,7 +75,7 @@ Preprocessed corpora and extracted features can be downloaded in the `VC_data` f
 
 
 Alternatively, you can prepare data on your own (**Note:** some dependencies should be installed, e.g., `nltk`, `pretrainedmodels`).
-1. Preprocessing corpora
+1. Preprocessing corpora:
     ```
     python prepare_corpora.py --dataset Youtube2Text --sort_vocab
     python prepare_corpora.py --dataset MSRVTT --sort_vocab
@@ -167,16 +167,14 @@ python translate.py --default --dataset MSRVTT --method NACF --use_ct --paradigm
 
 
 ## Citation
-Please **[★star]** this repo and **[cite]** the following arXiv paper if you feel our code or models useful to your research:
+Please **[★star]** this repo and **[cite]** the following paper if you feel our code or models useful to your research:
 
 ```
-@misc{yang2021nonautoregressive,
-      title={Non-Autoregressive Coarse-to-Fine Video Captioning}, 
-      author={Bang Yang and Yuexian Zou and Fenglin Liu and Can Zhang},
-      year={2021},
-      eprint={1911.12018},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{yang2021NACF,
+  title={Non-Autoregressive Coarse-to-Fine Video Captioning}, 
+  author={Bang Yang and Yuexian Zou and Fenglin Liu and Can Zhang},     
+  booktitle={AAAI},
+  year={2021}
 }
 ```
 **The BibTeX of the AAAI2021 publication will be available soon!**
