@@ -9,6 +9,7 @@ PyTorch Implementation of the paper:
 > [[ArXiv](https://arxiv.org/abs/1911.12018)]
 
 ## Updates
+**[16 Jun 2021]** Add detailed instuctions for extracting 3D features of videos.
 
 **[12 Mar 2021]** We have released the codebase, preprocessed data and pre-trained models. 
 
@@ -106,7 +107,16 @@ Alternatively, you can prepare data on your own (**Note:** some dependencies sho
     --frame_suffix jpg \
     --gpu 3
     ```
-* Extracting motion features: please refer to [kenshohara/video-classification-3d-cnn-pytorch](https://github.com/kenshohara/video-classification-3d-cnn-pytorch)
+* Extracting motion features (**Note**: we should extract all frames of videos in advance)
+    ```
+    python pretreatment/extract_frames_from_videos.py \
+    --video_path $path_to_video_files \
+    --frame_path $path_to_save_frames \
+    --video_suffix mp4 \
+    --frame_suffix jpg \
+    --strategy 0
+    ```
+    * The rest part please refer to [this repository](https://github.com/yangbang18/video-classification-3d-cnn).
 
 ## Pretrained Models
 We have provided the captioning models pre-trained on Youtube2Text (MSVD) and MSRVTT. Please refer to the `experiments` folder in [GoogleDrive](https://drive.google.com/drive/folders/1oieaYBCNw5sk3fi1cyorYxcMg2LIVXr8?usp=sharing) or [BaiduYun](https://pan.baidu.com/s/1ZMuoH_QDYjdXT2wVh5fjaw) (extract code `lkmu`).
@@ -177,8 +187,6 @@ Please **[★star]** this repo and **[cite]** the following paper if you feel ou
   year={2021}
 }
 ```
-**The BibTeX of the AAAI2021 publication will be available soon!**
-
 
 ## Acknowledgements
 Code of the decoding part is based on [facebookresearch/Mask-Predict](https://github.com/facebookresearch/Mask-Predict).
