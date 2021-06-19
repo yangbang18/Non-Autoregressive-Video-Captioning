@@ -182,8 +182,11 @@ Please **[★star]** this repo and **[cite]** the following paper if you feel ou
 ```
 @inproceedings{yang2021NACF,
   title={Non-Autoregressive Coarse-to-Fine Video Captioning}, 
-  author={Bang Yang and Yuexian Zou and Fenglin Liu and Can Zhang},     
-  booktitle={AAAI},
+  author={Yang, Bang and Zou, Yuexian and Liu, Fenglin and Zhang, Can},     
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={4},
+  pages={3119-3127},
   year={2021}
 }
 ```
