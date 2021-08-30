@@ -6,9 +6,12 @@ PyTorch Implementation of the paper:
 >
 > Bang Yang, Yuexian Zou\*, Fenglin Liu and Can Zhang.
 >
-> [[ArXiv](https://arxiv.org/abs/1911.12018)]
+> [[arXiv](https://arxiv.org/abs/1911.12018)] or [[aaai.org](https://ojs.aaai.org/index.php/AAAI/article/view/16421)]
 
 ## Updates
+
+**[30 Aug 2021]** Update the out-of-date links.
+
 **[16 Jun 2021]** Add detailed instuctions for extracting 3D features of videos.
 
 **[12 Mar 2021]** We have released the codebase, preprocessed data and pre-trained models. 
@@ -54,7 +57,7 @@ Here we use `torch 1.6.0` based on `CUDA 10.1`. Another version of `torch` may a
 - `NACF`: `NAB` w/ visual word generation & coarse-grained templates
 
 ## Corpora/Feature Preparation
-Preprocessed corpora and extracted features can be downloaded in the `VC_data` folder in [GoogleDrive](https://drive.google.com/drive/folders/1oieaYBCNw5sk3fi1cyorYxcMg2LIVXr8?usp=sharing) or [BaiduYun](https://pan.baidu.com/s/1ZMuoH_QDYjdXT2wVh5fjaw) (extract code `lkmu`).
+Preprocessed corpora and extracted features can be downloaded in the `VC_data` folder in [GoogleDrive](https://drive.google.com/drive/folders/1oieaYBCNw5sk3fi1cyorYxcMg2LIVXr8?usp=sharing) or [BaiduYun](https://pan.baidu.com/s/1AP3jfSOPcbHHktmHPXeo-w) (extract code `4k3i`).
 
 * Following the structure below to place corpora and feature files:
     ```
