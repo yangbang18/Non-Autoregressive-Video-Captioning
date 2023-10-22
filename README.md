@@ -10,6 +10,8 @@ PyTorch Implementation of the paper:
 
 ## Updates
 
+**[22 Oct 2023]** This repository is no longer maintained. If you want to reproduce the proposed NACF method in a more modern framework (i.e., `PyTorch Lightning`) or with more advanced video features as inputs (e.g., `CLIP` features), please refer to our latest [repository](https://github.com/yangbang18/CARE).
+
 **[30 Aug 2021]** Update the out-of-date links.
 
 **[16 Jun 2021]** Add detailed instuctions for extracting 3D features of videos.
@@ -17,24 +19,24 @@ PyTorch Implementation of the paper:
 **[12 Mar 2021]** We have released the codebase, preprocessed data and pre-trained models. 
 
 ## Main Contribution
-1. The first non-autoregressive decoding based method for video captioning.
-2. A generation task of specific part of speech to alleviate the insufficient training of meanining words.
-3. Visual word-driven flexiable decoding algorithms for caption generation.
+1. The first non-autoregressive decoding-based method for video captioning.
+2. A generation task of specific part of speech to alleviate the insufficient training of meaningful words.
+3. Visual word-driven flexible decoding algorithms for caption generation.
 
 ## Content
 
 - [Environment](#environment)
 - [Basic Information](#basic-information)
-- [Corpora/Feature Preparation](#corpora/feature-Preparation)
+- [Corpora/Feature Preparation](#corpora/feature-preparation)
 - [Pretrained Models](#pretrained-models)
 - [Training](#training)
 - [Testing](#testing)
 - [Citation](#citation)
-- [Acknowledgements](#Acknowledgements)
+- [Acknowledgements](#acknowledgements)
 
 
 ## Environment
-we recommend you to use Anaconda to create a new environment:
+we recommend you use Anaconda to create a new environment:
 ```
 conda create -n cap python==3.7
 conda activate cap
@@ -57,7 +59,7 @@ Here we use `torch 1.6.0` based on `CUDA 10.1`. Another version of `torch` may a
 - `NACF`: `NAB` w/ visual word generation & coarse-grained templates
 
 ## Corpora/Feature Preparation
-Preprocessed corpora and extracted features can be downloaded in the `VC_data` folder in [GoogleDrive](https://drive.google.com/drive/folders/1oieaYBCNw5sk3fi1cyorYxcMg2LIVXr8?usp=sharing) or [BaiduYun](https://pan.baidu.com/s/1AP3jfSOPcbHHktmHPXeo-w) (extract code `4k3i`).
+Preprocessed corpora and extracted features can be downloaded in the `VC_data` folder in [GoogleDrive](https://drive.google.com/drive/folders/1oieaYBCNw5sk3fi1cyorYxcMg2LIVXr8?usp=sharing) or [PKU Yun](https://disk.pku.edu.cn:443/link/74125EB20FEA16EF85AE8BE4A1BE0E80).
 
 * Following the structure below to place corpora and feature files:
     ```
@@ -85,7 +87,7 @@ Alternatively, you can prepare data on your own (**Note:** some dependencies sho
     python prepare_corpora.py --dataset MSRVTT --sort_vocab
     ```
 2. Feature extraction:
-* Downloading all video files of [Youtube2Text (MSVD)](http://www.cs.utexas.edu/users/ml/clamp/videoDescription/YouTubeClips.tar) and [MSRVTT](http://ms-multimedia-challenge.com/2017/dataset)
+* Downloading all video files of [Youtube2Text (MSVD)](http://www.cs.utexas.edu/users/ml/clamp/videoDescription/YouTubeClips.tar) and [MSRVTT](http://ms-multimedia-challenge.com/2017/dataset). Alternative links are available at [this url](https://github.com/yangbang18/CARE/blob/master/README_DATA.md).
 * Extracting frames
     ```
     python pretreatment/extract_frames_from_videos.py \
